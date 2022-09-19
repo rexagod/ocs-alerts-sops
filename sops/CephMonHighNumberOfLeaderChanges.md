@@ -37,6 +37,8 @@ We cannot do much about the possible causes of network issues e.g. misconfigured
 is a network issue, escalate to the ODF team by following the steps [here](sre-to-engineering-escalation.md#procedure).
 
 ### The affected monitor logs can provide more information about the problem
+
+    oc logs <rook-ceph-mon-X-....> -n openshift-storage
 Use the Openshift console to open the logs of the monitor pod affected. More information about possible causes can be reflected in the log.
 
 ### Follow the general pod debug workflow outlined below.
